@@ -1,3 +1,6 @@
+@import "../settings/breakpoints";
+
+
 .body{
     font-family: "Poppins",Arial, Helvetica, sans-serif;
     color: var(--black-soft);
@@ -9,7 +12,9 @@ a{
 
 .container{
     padding: 0 20px;
-
+    @include max-tablet{
+        padding: 0 40px;
+    }
 }
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126

@@ -1,9 +1,10 @@
 @import "public/home.scss";
+
 @import "components/public/header.scss";
 @import "components/buttons/cta.scss";
 
-@import "settings/reset.scss";
 @import "settings/colors.scss";
+@import "settings/reset.scss";
 
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
 @source '../../storage/framework/views/*.php';
