@@ -11,9 +11,9 @@ a{
 }
 
 .container{
-    padding: 0 20px;
+    padding: 40px 20px;
     @include max-tablet{
-        padding: 0 40px;
+        padding: 76px 40px;
     }
 }
 /* http://meyerweb.com/eric/tools/css/reset/

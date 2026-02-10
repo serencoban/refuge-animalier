@@ -2,7 +2,7 @@
 .header{
     padding: 16px 20px;
     @include max-tablet{
-        padding: 16px 40px;
+        padding: 32px 40px;
     }
 
 .header__navbar{
@@ -28,7 +28,8 @@
     &__menu{
         display: flex;
         &-item{
-            margin-left: 20px;
+            margin-left: 32px;
+
         }
         @include max-tablet{
             align-items: center;
