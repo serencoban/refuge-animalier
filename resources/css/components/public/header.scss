@@ -1,0 +1,35 @@
+@import "../../settings/breakpoints";
+
+.header__navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__brand{
+        display: flex;
+        flex-direction: column;
+
+        &__title{
+            font-size: 16px;
+        }
+        &__subtitle{
+            font-size: 12px;
+        }
+    }
+
+    &__menu{
+        display: flex;
+        &-item{
+            margin-left: 20px;
+        }
+        @include min-tablet{
+            display: none;
+        }
+    }
+}
+
+.mobile__nav-bar__menu{
+    @include max-desktop{
+        display: none;
+    }
+}

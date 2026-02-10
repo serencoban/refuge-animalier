@@ -17,6 +17,14 @@ $wide-min: 1800px;          // ≥ 1600px
         @content;
     }
 }
+
+@mixin min-tablet {
+    @media (max-width: #{$tablet-max}) {
+        @content;
+    }
+}
+
+
 // Max-Tablet : à partir de 600
 @mixin max-tablet {
     @media (min-width: #{$tablet-min}) {

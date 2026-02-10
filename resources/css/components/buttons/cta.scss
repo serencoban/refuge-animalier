@@ -1,0 +1,23 @@
+@import "../../settings/breakpoints.scss";
+
+.cta__btn {
+    display: inline-block;
+    padding: 16px 40px;
+    background-color: var(--olive-dark);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    @include max-tablet{
+        padding: 16px 48px;
+        font-size: 16px;
+        font-weight: 700;
+    }
+}
+
+.cta__btn:hover {
+    background-color: var(--olive-dark-hover) ;
+}
