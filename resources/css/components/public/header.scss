@@ -1,4 +1,9 @@
 @import "../../settings/breakpoints";
+.header{
+    padding: 16px 20px;
+    @include max-tablet{
+        padding: 16px 40px;
+    }
 
 .header__navbar{
     display: flex;
@@ -8,9 +13,12 @@
     &__brand{
         display: flex;
         flex-direction: column;
+        color: var(--olive-dark);
 
         &__title{
-            font-size: 16px;
+            font-size: 20px;
+            font-weight: 700;
+            text-transform: uppercase;
         }
         &__subtitle{
             font-size: 12px;
@@ -22,12 +30,19 @@
         &-item{
             margin-left: 20px;
         }
+        @include max-tablet{
+            align-items: center;
+        }
         @include min-tablet{
             display: none;
         }
     }
 }
-
+}
+.header__link{
+    color: var(--black-soft);
+    text-decoration: none;
+}
 .mobile__nav-bar__menu{
     @include max-desktop{
         display: none;

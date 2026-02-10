@@ -11,16 +11,16 @@
 </head>
 
 <body class="body">
-<header class="header container">
+<header class="header">
     <nav class="header__navbar">
         <a href="{{ __('/') }}" class="header__navbar__brand">
             <h2 class="header__navbar__brand__title">Les Pattes Heureuses</h2>
             <p class="header__navbar__brand__subtitle">Votre refuge Liégeois</p>
         </a>
         <ul class="header__navbar__menu">
-            <li class="header__navbar__menu-item"><a href="{{ __('/') }}">Accueil</a></li>
-            <li class="header__navbar__menu-item"><a href="{{ __('/animals') }}">Nos animaux</a></li>
-            <li class="header__navbar__menu-item"><a class="cta__btn" href="{{ __('/contact') }}">Nous contacter</a></li>
+            <li class="header__navbar__menu-item"><a class="header__link" href="{{ __('/') }}">Accueil</a></li>
+            <li class="header__navbar__menu-item"><a class="header__link" href="{{ __('/animals') }}">Nos animaux</a></li>
+            <li class="header__navbar__menu-item"><a class="header__cta__btn" href="{{ __('/contact') }}">Nous contacter</a></li>
         </ul>
         <ul id="burgerMenu" class="mobile__nav-bar__menu">
             <svg xmlns="http://www.w3.org/2000/svg" width="41" height="17" viewBox="0 0 41 17" fill="none">
