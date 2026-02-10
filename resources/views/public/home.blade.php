@@ -11,16 +11,16 @@
 </head>
 
 <body class="body">
-<header class="header">
-    <nav class="nav-bar container">
-        <a href="{{ __('/') }}" class="nav-bar__brand">
-            <h2 class="nav-bar__title">Les Pattes Heureuses</h2>
-            <p class="nav-bar__subtitle">Votre refuge Liégeois</p>
+<header class="header container">
+    <nav class="header__navbar">
+        <a href="{{ __('/') }}" class="header__navbar__brand">
+            <h2 class="header__navbar__brand__title">Les Pattes Heureuses</h2>
+            <p class="header__navbar__brand__subtitle">Votre refuge Liégeois</p>
         </a>
-        <ul class="nav-bar__menu">
-            <li><a href="{{ __('/') }}">Accueil</a></li>
-            <li><a href="{{ __('/animals') }}">Nos animaux</a></li>
-            <li><a class="cta__btn" href="{{ __('/contact') }}">Nous contacter</a></li>
+        <ul class="header__navbar__menu">
+            <li class="header__navbar__menu-item"><a href="{{ __('/') }}">Accueil</a></li>
+            <li class="header__navbar__menu-item"><a href="{{ __('/animals') }}">Nos animaux</a></li>
+            <li class="header__navbar__menu-item"><a class="cta__btn" href="{{ __('/contact') }}">Nous contacter</a></li>
         </ul>
         <ul id="burgerMenu" class="mobile__nav-bar__menu">
             <svg xmlns="http://www.w3.org/2000/svg" width="41" height="17" viewBox="0 0 41 17" fill="none">
@@ -34,14 +34,16 @@
 
 <main class="main">
     <section class="hero">
-        <h1 class="hero__title">Les Pattes Heureuses</h1>
-        <p class="hero__text">
-            Nous accueillons chaque année des dizaines d’animaux dans le besoin.
-            Découvrez-les et aidez-les à trouver un nouveau foyer.
-        </p>
-        <a href="#" class="cta__btn">Nous contacter</a>
+        <div class="hero__content">
+            <h1 class="hero__title">Les Pattes Heureuses</h1>
+            <p class="hero__text">
+                Nous accueillons chaque année des dizaines d'animaux dans le besoin.
+                Découvrez-les et aidez-les à trouver un nouveau foyer.
+            </p>
+            <a href="{{ __('/contact') }}" class="cta__btn">Nous contacter</a>
+        </div>
     </section>
-    <section class="steps">
+    <section class="steps container">
         <div class="steps__item">
             <span class="steps__number">1</span>
             <p class="steps__text">Choisissez votre futur compagnon</p>
@@ -58,7 +60,7 @@
             <a class="steps__link" href="#">Finaliser l’adoption</a>
         </div>
     </section>
-    <section class="animals">
+    <section class="animals container">
         <h2 class="animals__title">Découvrez nos animaux</h2>
         <p class="animals__description">Parcourez les fiches de nos animaux disponibles à l’adoption.</p>
         <div class="animals__grid">
@@ -82,7 +84,7 @@
         </div>
         <a href="#" class="cta__btn">Voir tous les animaux</a>
     </section>
-    <section class="about">
+    <section class="about container">
         <div class="about__content">
             <div class="about__header">
                 <h2 class="about__title">Nous & nos missions</h2>
