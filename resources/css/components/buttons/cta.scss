@@ -19,7 +19,9 @@
 }
 
 .cta__btn:hover {
-    background-color: var(--olive-dark-hover) ;
+    background-color: var(--white) ;
+    color: var(--olive-dark-hover) ;
+    outline: 2px var(--olive-dark-hover) solid;
 }
 
 
