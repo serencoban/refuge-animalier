@@ -113,20 +113,22 @@
     </section>
     <section class="about container">
         <div class="about__content">
-            <div class="about__header">
-                <h2 class="about__title">Nous & nos missions</h2>
-                <svg class="about__separator" width="319" height="15" viewBox="0 0 319 15">
-                    <path d="M2.5 2.5H316.5" stroke="#EDE0D4" stroke-width="5" stroke-linecap="round"/>
-                    <path d="M44.5 12.5L295.391 3" stroke="#EDE0D4" stroke-width="5" stroke-linecap="round"/>
-                </svg>
+            <div class="about__content__info">
+                <div class="about__header">
+                    <h2 class="about__title">Nous & nos missions</h2>
+                    <svg class="about__separator" width="319" height="15" viewBox="0 0 319 15">
+                        <path d="M2.5 2.5H316.5" stroke="#EDE0D4" stroke-width="5" stroke-linecap="round"/>
+                        <path d="M44.5 12.5L295.391 3" stroke="#EDE0D4" stroke-width="5" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <p class="about__text">Situé en plein cœur de la région liégeoise, notre refuge offre une seconde chance à des chiens, chats et petits compagnons qui n’attendent qu’une famille aimante. Depuis plus de 10 ans, notre équipe de bénévoles passionnés veille chaque jour au bien-être des animaux, de leur arrivée jusqu’à leur adoption.</p>
+                <p class="about__text">Chaque histoire est unique, et nous mettons tout en œuvre pour leur redonner confiance, santé et amour </p>
             </div>
-            <p class="about__text">Situé en plein cœur de la région liégeoise, notre refuge offre une seconde chance…</p>
-            <p class="about__text">Chaque histoire est unique, et nous mettons tout en œuvre pour leur redonner confiance.</p>
             <a href="{{ __('/contact') }}" class="cta__btn">Rejoignez-nous</a>
         </div>
         <div class="about__media">
-            <img class="about__image" src="/storage/mission-dog.png" alt="Refuge">
-            <svg class="about__image__svg" xmlns="http://www.w3.org/2000/svg" width="234" height="233"
+            <img class="about__media__image" src="{{ asset('img/mission.png') }}" alt="Refuge">
+            <svg class="about__media__svg" xmlns="http://www.w3.org/2000/svg" width="234" height="233"
                  viewBox="0 0 234 233" fill="none">
                 <circle cx="154" cy="152.174" r="80" fill="#EDE0D4"/>
                 <ellipse cx="37.1228" cy="113.172" rx="23" ry="30" transform="rotate(-63.4021 37.1228 113.172)"
