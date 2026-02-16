@@ -1,0 +1,73 @@
+@import "../settings/breakpoints.scss";
+.contact-hero{
+    position: relative;
+    width: 100%;
+    height: 30vh;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.7) 100%),
+    url('../../../public/img/contact.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    color: var(--white);
+    @include max-desktop{
+        height: 50vh;
+    }
+
+    &__title{
+        font-size: 40px;
+    }
+    &__subtitle{
+        max-width: 900px;
+    }
+    .contact__content{
+        padding: 0 20px 60px;
+        @include max-desktop{
+            padding: 0 40px 60px;
+        }
+    }
+}
+
+.aside__form__container{
+    padding: 58px 96px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 24px;
+    @include min-tablet{
+        padding: 58px 40px;
+    }
+
+}
+
+.form-aside{
+    background-color: var(--olive-dark);
+
+    border-radius: 4px;
+    color: var(--white);
+    &__title{
+        font-size: 32px;
+        padding: 20px 20px 0;
+    }
+    &__text{
+        padding: 20px 20px 0;
+    }
+}
+.contact-form{
+    background-color: var(--beige-light);
+    padding: 20px;
+    border-radius: 8px;
+    &__group{
+        margin-bottom: 22px;
+    }
+    &__label{
+        display: block;
+        padding-bottom: 8px;
+    }
+    &__input{
+        border: 1px var(--grey-light) solid;
+        padding: 8px 16px;
+        border-radius: 4px;
+    }
+}
