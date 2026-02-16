@@ -8,3 +8,6 @@ Route::get('/', function () {
 Route::get('/contact', function () {
     return view('public.contact');
 });
+Route::get('/contact', function () {
+    return view('public.animals.index');
+});

@@ -1,36 +1,6 @@
-<!doctype html>
-<html lang="fr">
+@include('components.header')
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Refuge">
-    <meta name="author" content="Coban Seren">
-    <title>Refuge - Accueil</title>
-    @vite(['resources/css/app.scss', 'resources/js/app.js'])
-</head>
 
-<body class="body">
-<header class="header">
-    <nav class="header__navbar">
-        <a href="{{ __('/') }}" class="header__navbar__brand">
-            <h2 class="header__navbar__brand__title">Les Pattes Heureuses</h2>
-            <p class="header__navbar__brand__subtitle">Votre refuge Liégeois</p>
-        </a>
-        <ul class="header__navbar__menu">
-            <li class="header__navbar__menu-item"><a class="header__link" href="{{ __('/') }}">Accueil</a></li>
-            <li class="header__navbar__menu-item"><a class="header__link" href="{{ __('/animals') }}">Nos animaux</a></li>
-            <li class="header__navbar__menu-item"><a class="header__cta__btn" href="{{ __('/contact') }}">Nous contacter</a></li>
-        </ul>
-        <ul id="burgerMenu" class="mobile__nav-bar__menu">
-            <svg xmlns="http://www.w3.org/2000/svg" width="41" height="17" viewBox="0 0 41 17" fill="none">
-                <line x1="1.5" y1="1.5" x2="39.5" y2="1.5" stroke="#414833" stroke-width="3" stroke-linecap="round"/>
-                <line x1="1.5" y1="8.5" x2="39.5" y2="8.5" stroke="#414833" stroke-width="3" stroke-linecap="round"/>
-                <line x1="1.5" y1="15.5" x2="39.5" y2="15.5" stroke="#414833" stroke-width="3" stroke-linecap="round"/>
-            </svg>
-        </ul>
-    </nav>
-</header>
 
 <main class="main">
     <section class="hero">
@@ -142,22 +112,4 @@
     </section>
 </main>
 
-<footer class="footer">
-        <div class="footer__brand">
-            <h2 class="footer__title">Les Pattes Heureuses</h2>
-            <p class="footer__text">Rue du Quelquechose 18<br>4500 Ville</p>
-            <p class="footer__text">+32 471 32 63 08</p>
-            <p class="footer__text">Ouvert du lundi au samedi de <time class="footer__time" datetime="10">10h</time> à <time class="footer__time"  datetime="18">18h</time></p>
-        </div>
-        <nav class="footer__nav">
-            <h3 class="footer__title">Navigation</h3>
-            <ul class="footer__menu">
-                <li class="footer__item"><a class="footer__link" href="{{ __('/') }}">Accueil</a></li>
-                <li class="footer__item"><a class="footer__link" href="{{ __('/animals') }}">Nos animaux</a></li>
-                <li class="footer__item"><a class="footer__link" href="{{ __('/contact') }}">Nous contacter</a></li>
-            </ul>
-        </nav>
-</footer>
-
-</body>
-</html>
+@include('components.footer')
