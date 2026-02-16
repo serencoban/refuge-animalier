@@ -1,3 +1,4 @@
+
 <footer class="footer">
     <div class="footer__brand">
         <h2 class="footer__title">Les Pattes Heureuses</h2>

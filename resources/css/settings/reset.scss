@@ -17,6 +17,17 @@ a{
     }
 }
 
+input, textarea{
+    border: 1px var(--grey-light) solid;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+label{
+    display: block;
+    padding-bottom: 8px;
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
