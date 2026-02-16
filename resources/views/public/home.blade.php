@@ -1,4 +1,4 @@
-@include('components.header')
+@include('components.public.header')
 
 <main class="main">
     <section class="hero">
@@ -15,16 +15,24 @@
         <div class="steps__item">
             <span class="steps__number">1</span>
             <p class="steps__text">Choisissez votre compagnon</p>
-            <a class="steps__link" href="{{__('/animals.show')}}"><span><svg xmlns="http://www.w3.org/2000/svg" width="23" height="8" viewBox="0 0 23 8" fill="none">
-  <path d="M22.3536 4.03556C22.5488 3.8403 22.5488 3.52372 22.3536 3.32845L19.1716 0.146473C18.9763 -0.0487893 18.6597 -0.0487893 18.4645 0.146473C18.2692 0.341735 18.2692 0.658318 18.4645 0.85358L21.2929 3.68201L18.4645 6.51043C18.2692 6.7057 18.2692 7.02228 18.4645 7.21754C18.6597 7.4128 18.9763 7.4128 19.1716 7.21754L22.3536 4.03556ZM0 3.68201V4.18201H22V3.68201V3.18201H0V3.68201Z" fill="#443024"/>
+            <a class="steps__link" href="{{__('/animals.show')}}"><span><svg xmlns="http://www.w3.org/2000/svg"
+                                                                             width="23" height="8" viewBox="0 0 23 8"
+                                                                             fill="none">
+  <path
+      d="M22.3536 4.03556C22.5488 3.8403 22.5488 3.52372 22.3536 3.32845L19.1716 0.146473C18.9763 -0.0487893 18.6597 -0.0487893 18.4645 0.146473C18.2692 0.341735 18.2692 0.658318 18.4645 0.85358L21.2929 3.68201L18.4645 6.51043C18.2692 6.7057 18.2692 7.02228 18.4645 7.21754C18.6597 7.4128 18.9763 7.4128 19.1716 7.21754L22.3536 4.03556ZM0 3.68201V4.18201H22V3.68201V3.18201H0V3.68201Z"
+      fill="#443024"/>
 </svg></span>
                 Consulter les fiches d’animaux</a>
         </div>
         <div class="steps__item">
             <span class="steps__number">2</span>
             <p class="steps__text">Rencontrez-le au refuge</p>
-            <a class="steps__link" href="{{__('/animals.index')}}"><span><svg xmlns="http://www.w3.org/2000/svg" width="23" height="8" viewBox="0 0 23 8" fill="none">
-  <path d="M22.3536 4.03556C22.5488 3.8403 22.5488 3.52372 22.3536 3.32845L19.1716 0.146473C18.9763 -0.0487893 18.6597 -0.0487893 18.4645 0.146473C18.2692 0.341735 18.2692 0.658318 18.4645 0.85358L21.2929 3.68201L18.4645 6.51043C18.2692 6.7057 18.2692 7.02228 18.4645 7.21754C18.6597 7.4128 18.9763 7.4128 19.1716 7.21754L22.3536 4.03556ZM0 3.68201V4.18201H22V3.68201V3.18201H0V3.68201Z" fill="#443024"/>
+            <a class="steps__link" href="{{__('/animals.index')}}"><span><svg xmlns="http://www.w3.org/2000/svg"
+                                                                              width="23" height="8" viewBox="0 0 23 8"
+                                                                              fill="none">
+  <path
+      d="M22.3536 4.03556C22.5488 3.8403 22.5488 3.52372 22.3536 3.32845L19.1716 0.146473C18.9763 -0.0487893 18.6597 -0.0487893 18.4645 0.146473C18.2692 0.341735 18.2692 0.658318 18.4645 0.85358L21.2929 3.68201L18.4645 6.51043C18.2692 6.7057 18.2692 7.02228 18.4645 7.21754C18.6597 7.4128 18.9763 7.4128 19.1716 7.21754L22.3536 4.03556ZM0 3.68201V4.18201H22V3.68201V3.18201H0V3.68201Z"
+      fill="#443024"/>
 </svg></span>
                 Remplisser formulaire lié à sa fiche.</a>
         </div>
@@ -36,42 +44,12 @@
     </section>
     <section class="animals container">
         <h2 class="animals__title">Découvrez nos animaux</h2>
-        <p class="animals__description">Parcourez les fiches de nos animaux disponibles à l’adoption. Chacun d’eux attend une nouvelle famille où il pourra s’épanouir et être aimé comme il le mérite</p>
+        <p class="animals__description">Parcourez les fiches de nos animaux disponibles à l’adoption. Chacun d’eux
+            attend une nouvelle famille où il pourra s’épanouir et être aimé comme il le mérite</p>
         <div class="animals__grid">
-            <article class="animal-card">
-                <div class="animal-card__image-wrapper">
-                    <img class="animal-card__image" src="{{ asset('img/caniche.png') }}" alt="Moka">
-                    <span class="animal-card__status">Disponible</span>
-                </div>
-                <div class="animal-card__content">
-                    <div class="animal-card__info">
-                        <h3 class="animal-card__info__name">Moka</h3>
-                        <p class="animal-card__info__other">Caniche · 5 ans</p>
-                    </div>
-                    <a href="#" class="animal-card__info__link" aria-label="Voir la fiche de Moka">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="15" viewBox="0 0 19 15">
-                            <path d="M1 6.36401C0.447715 6.36401 0 6.81173 0 7.36401C0 7.9163 0.447715 8.36401 1 8.36401V7.36401V6.36401ZM18.7071 8.07112C19.0976 7.6806 19.0976 7.04743 18.7071 6.65691L12.3431 0.292946C11.9526 -0.0975785 11.3195 -0.0975785 10.9289 0.292946C10.5384 0.68347 10.5384 1.31664 10.9289 1.70716L16.5858 7.36401L10.9289 13.0209C10.5384 13.4114 10.5384 14.0446 10.9289 14.4351C11.3195 14.8256 11.9526 14.8256 12.3431 14.4351L18.7071 8.07112ZM1 7.36401V8.36401H18V7.36401V6.36401H1V7.36401Z"/>
-                        </svg>
-                    </a>
-                </div>
-            </article>
-            <article class="animal-card">
-                <div class="animal-card__image-wrapper">
-                    <img class="animal-card__image" src="{{ asset('img/caniche.png') }}" alt="Moka">
-                    <span class="animal-card__status">Disponible</span>
-                </div>
-                <div class="animal-card__content">
-                    <div class="animal-card__info">
-                        <h3 class="animal-card__info__name">Moka</h3>
-                        <p class="animal-card__info__other">Caniche · 5 ans</p>
-                    </div>
-                    <a href="#" class="animal-card__info__link" aria-label="Voir la fiche de Moka">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="15" viewBox="0 0 19 15">
-                            <path d="M1 6.36401C0.447715 6.36401 0 6.81173 0 7.36401C0 7.9163 0.447715 8.36401 1 8.36401V7.36401V6.36401ZM18.7071 8.07112C19.0976 7.6806 19.0976 7.04743 18.7071 6.65691L12.3431 0.292946C11.9526 -0.0975785 11.3195 -0.0975785 10.9289 0.292946C10.5384 0.68347 10.5384 1.31664 10.9289 1.70716L16.5858 7.36401L10.9289 13.0209C10.5384 13.4114 10.5384 14.0446 10.9289 14.4351C11.3195 14.8256 11.9526 14.8256 12.3431 14.4351L18.7071 8.07112ZM1 7.36401V8.36401H18V7.36401V6.36401H1V7.36401Z"/>
-                        </svg>
-                    </a>
-                </div>
-            </article>
+            @for($i = 1; $i <=4 ; $i++)
+                <x-public.animal-card></x-public.animal-card>
+            @endfor
         </div>
         <a href="#" class="cta__btn">Voir tous les animaux</a>
     </section>
@@ -85,8 +63,12 @@
                         <path d="M44.5 12.5L295.391 3" stroke="#EDE0D4" stroke-width="5" stroke-linecap="round"/>
                     </svg>
                 </div>
-                <p class="about__text">Situé en plein cœur de la région liégeoise, notre refuge offre une seconde chance à des chiens, chats et petits compagnons qui n’attendent qu’une famille aimante. Depuis plus de 10 ans, notre équipe de bénévoles passionnés veille chaque jour au bien-être des animaux, de leur arrivée jusqu’à leur adoption.</p>
-                <p class="about__text">Chaque histoire est unique, et nous mettons tout en œuvre pour leur redonner confiance, santé et amour </p>
+                <p class="about__text">Situé en plein cœur de la région liégeoise, notre refuge offre une seconde chance
+                    à des chiens, chats et petits compagnons qui n’attendent qu’une famille aimante. Depuis plus de 10
+                    ans, notre équipe de bénévoles passionnés veille chaque jour au bien-être des animaux, de leur
+                    arrivée jusqu’à leur adoption.</p>
+                <p class="about__text">Chaque histoire est unique, et nous mettons tout en œuvre pour leur redonner
+                    confiance, santé et amour </p>
             </div>
             <a href="{{ __('/contact') }}" class="cta__btn">Rejoignez-nous</a>
         </div>
@@ -106,4 +88,4 @@
     </section>
 </main>
 
-@include('components.footer')
+@include('components.public.footer')
