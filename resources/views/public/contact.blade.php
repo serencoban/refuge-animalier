@@ -1,9 +1,10 @@
-@include('components.header')
+@include('components.public.header')
 <main>
     <section class="contact-hero">
         <div class="contact__content">
             <h1 class="contact-hero__title">Nous contacter</h1>
-            <svg class="contact-hero__divider" width="319" height="15" viewBox="0 0 319 15" xmlns="http://www.w3.org/2000/svg">
+            <svg class="contact-hero__divider" width="319" height="15" viewBox="0 0 319 15"
+                 xmlns="http://www.w3.org/2000/svg">
                 <path d="M2.5 2.5H316.5" stroke="#EDE0D4" stroke-width="5" stroke-linecap="round"/>
                 <path d="M44.5 12.5L295.391 3" stroke="#EDE0D4" stroke-width="5" stroke-linecap="round"/>
             </svg>
@@ -18,10 +19,12 @@
 
         <aside class="form-aside">
             <h2 class="form-aside__title">Devenir bénévole, poser une question,...</h2>
-            <p class="form-aside__text">Devenez la personne qui, chaque jour, offrent de leur temps et de leur énergie pour
+            <p class="form-aside__text">Devenez la personne qui, chaque jour, offrent de leur temps et de leur énergie
+                pour
                 prendre soin de nos animaux. Grâce à leur engagement, chaque animal reçoit l’attention et l’amour qu’il
                 mérite.</p>
-            <svg class="form-aside__decor" xmlns="http://www.w3.org/2000/svg" width="201" height="226" viewBox="0 0 201 226"
+            <svg class="form-aside__decor" xmlns="http://www.w3.org/2000/svg" width="201" height="226"
+                 viewBox="0 0 201 226"
                  fill="none">
                 <circle cx="33.1323" cy="188.138" r="80" transform="rotate(75 33.1323 188.138)" fill="#414833"/>
                 <ellipse cx="40.5555" cy="65.149" rx="23" ry="30" transform="rotate(11.5979 40.5555 65.149)"
@@ -63,4 +66,4 @@
         </section>
     </div>
 </main>
-@include('components.footer')
+@include('components.public.footer')
