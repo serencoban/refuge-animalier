@@ -18,9 +18,22 @@
 
     &__title{
         font-size: 40px;
+        @include min-tablet{
+            font-size: 22px;
+        }
+    }
+    &__divider{
+        width: 260px;
+        @include min-tablet{
+            width: 140px;
+        }
+
     }
     &__subtitle{
         max-width: 900px;
+        @include min-tablet{
+            font-size: 12px;
+        }
     }
     .contact__content{
         padding: 0 20px 60px;
