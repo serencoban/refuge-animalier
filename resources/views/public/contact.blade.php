@@ -9,9 +9,7 @@
                 <path d="M44.5 12.5L295.391 3" stroke="#EDE0D4" stroke-width="5" stroke-linecap="round"/>
             </svg>
             <p class="contact-hero__subtitle">
-                Parcourez les profils de nos chiens, chats et petits compagnons en attente d'un nouveau foyer.
-                Chaque animal a son histoire, son caractère et ses besoins : peut-être trouverez-vous ici votre futur
-                compagnon de vie.
+                Devenez la personne qui, chaque jour, offrent de leur temps et de leur énergie pour prendre soin de nos animaux. Grâce à leur engagement, chaque animal reçoit l’attention et l’amour qu’il mérite.
             </p>
         </div>
     </section>

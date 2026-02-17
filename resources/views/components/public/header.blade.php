@@ -18,7 +18,7 @@
         </a>
         <ul class="header__navbar__menu">
             <li class="header__navbar__menu-item"><a class="header__link" href="{{ __('/') }}">Accueil</a></li>
-            <li class="header__navbar__menu-item"><a class="header__link" href="{{ __('/animals') }}">Nos animaux</a></li>
+            <li class="header__navbar__menu-item"><a class="header__link" href="{{ __('/animals.index') }}">Nos animaux</a></li>
             <li class="header__navbar__menu-item"><a class="header__cta__btn" href="{{ __('/contact') }}">Nous contacter</a></li>
         </ul>
         <ul id="burgerMenu" class="mobile__nav-bar__menu">
