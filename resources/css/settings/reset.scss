@@ -11,7 +11,7 @@ a{
 }
 
 .container{
-    padding: 40px 20px;
+    padding: 0 40px 20px;
     @include max-tablet{
         padding: 0 76px 96px;
     }
