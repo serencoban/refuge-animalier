@@ -112,12 +112,14 @@
 }
 
 
-
 .about{
     display: flex;
     justify-content: space-between;
     gap: 32px;
     margin-top: 52px;
+    @include min-tablet{
+        overflow: hidden;
+    }
 
     &__header{
         font-size: 32px;
