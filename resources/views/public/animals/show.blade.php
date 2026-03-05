@@ -36,7 +36,7 @@
                     </div>
                     <div class="animal-infos__div">
                         <span class="animal-infos__first">Vaccins</span>
-                        <span class="animal-infos__second">Rage - Parvovirus</span>
+                        <span class="animal-infos__second">Rage / Parvovirus</span>
                     </div>
                 </div>
                 <svg class="animal-infos__svg" xmlns="http://www.w3.org/2000/svg" width="224" height="162"
@@ -63,31 +63,30 @@
                 <div class="form__appointment__flex">
                     <div class="rdv__input__container">
                         <label class="rdv__label" for="lastname">Nom*</label>
-                        <input class="lastname__input" type="text" name="lastname" id="lastname"
-                               placeholder="ex: Coban">
+                        <input class="rdv__input" type="text" name="lastname" id="lastname" placeholder="ex: Doe">
                     </div>
                     <div class="rdv__input__container">
                         <label class="rdv__label" for="firstname">Prenom*</label>
-                        <input class="firstname__input" type="text" name="firstname" id="firstname">
+                        <input class="rdv__input" type="text" name="firstname" id="firstname" placeholder="ex: Jane">
                     </div>
-
                 </div>
                 <div class="form__appointment__flex">
                     <div class="rdv__input__container">
                         <label class="rdv__label" for="email">Email*</label>
-                        <input class="email__input" type="email" name="email" id="email">
+                        <input class="rdv__input" type="email" name="email" id="email" placeholder="ex: janedoe@gmail.com">
                     </div>
                     <div class="rdv__input__container">
                         <label class="rdv__label" for="tel">Numéro de téléphone*</label>
-                        <input class="tel__input" type="tel" name="name" id="name">
+                        <input class="rdv__input" type="tel" name="name" id="name" placeholder="ex: 0474306483">
                     </div>
-
                 </div>
                 <div class="rdv__input__container">
                     <label for="desc">Description*</label>
-                    <textarea name="desc" id="desc" cols="30" rows="10"></textarea>
+                    <textarea class="rdv__input" name="desc" id="desc" cols="30" rows="10" placeholder="ex: J'aimerai prendre rendez-vous pour le..."></textarea>
                 </div>
-                <button class="cta__btn" type="submit">Envoyer le formulaire</button>
+                <div class="rdv__btn__container">
+                    <button class="cta__btn" type="submit">Envoyer le formulaire</button>
+                </div>
             </div>
             <div class="form__image__container">
                 <img class="form__image" src="{{ asset('img/bunny.png') }}" alt="">
