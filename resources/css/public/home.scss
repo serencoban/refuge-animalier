@@ -83,7 +83,6 @@
         font-size: 60px;
         @include min-tablet{
             font-size: 32px;
-
         }
     }
 
@@ -91,6 +90,9 @@
         font-size: 20px;
         font-weight: 500;
         padding: 16px 0;
+        @include min-tablet{
+            font-size: 16px;
+        }
     }
 
     &__link{
