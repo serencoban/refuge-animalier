@@ -14,7 +14,6 @@
     @include max-tablet{
         padding: 16px 48px;
         font-size: 16px;
-        font-weight: 700;
     }
 }
 
@@ -27,7 +26,7 @@
 
 .header__cta__btn{
     display: inline-block;
-    padding: 10px 20px;
+    padding: 10px 24px;
     background-color: var(--olive-dark);
     color: var(--white);
     text-decoration: none;
