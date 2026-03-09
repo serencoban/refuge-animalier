@@ -13,53 +13,54 @@
     </div>
 </section>
 <section class="container">
-    <div class="animals-filters">
+    <div class="animals-filters__container" >
         <p class="animals-filters__label">Filtrer par:</p>
+        <div class="animals-filters">
+            <div class="animals-filters__group">
+                <label for="age" class="animals-filters__group-label">Âge</label>
+                <select id="age" class="animals-filters__group-select">
+                    <option value="">Tous les âges</option>
+                    <option value="0-1">0-1 an</option>
+                    <option value="1-3">1-3 ans</option>
+                    <option value="3-5">3-5 ans</option>
+                    <option value="5+">5+ ans</option>
+                </select>
+            </div>
 
-        <div class="animals-filters__group">
-            <label for="age" class="animals-filters__group-label">Âge</label>
-            <select id="age" class="animals-filters__group-select">
-                <option value="">Tous les âges</option>
-                <option value="0-1">0-1 an</option>
-                <option value="1-3">1-3 ans</option>
-                <option value="3-5">3-5 ans</option>
-                <option value="5+">5+ ans</option>
-            </select>
-        </div>
+            <div class="animals-filters__group">
+                <label for="espece" class="animals-filters__group-label">Espèce</label>
+                <select id="espece" class="animals-filters__group-select">
+                    <option value="">Toutes les espèces</option>
+                    <option value="chien">Chien</option>
+                    <option value="chat">Chat</option>
+                    <option value="lapin">Lapin</option>
+                    <option value="autre">Autre</option>
+                </select>
+            </div>
 
-        <div class="animals-filters__group">
-            <label for="espece" class="animals-filters__group-label">Espèce</label>
-            <select id="espece" class="animals-filters__group-select">
-                <option value="">Toutes les espèces</option>
-                <option value="chien">Chien</option>
-                <option value="chat">Chat</option>
-                <option value="lapin">Lapin</option>
-                <option value="autre">Autre</option>
-            </select>
-        </div>
+            <div class="animals-filters__group">
+                <label for="pelage" class="animals-filters__group-label">Pelage</label>
+                <select id="pelage" class="animals-filters__group-select">
+                    <option value="">Tous les pelages</option>
+                    <option value="court">Court</option>
+                    <option value="mi-long">Mi-long</option>
+                    <option value="long">Long</option>
+                    <option value="boucle">Bouclé</option>
+                </select>
+            </div>
 
-        <div class="animals-filters__group">
-            <label for="pelage" class="animals-filters__group-label">Pelage</label>
-            <select id="pelage" class="animals-filters__group-select">
-                <option value="">Tous les pelages</option>
-                <option value="court">Court</option>
-                <option value="mi-long">Mi-long</option>
-                <option value="long">Long</option>
-                <option value="boucle">Bouclé</option>
-            </select>
+            <div class="animals-filters__group">
+                <label for="statut" class="animals-filters__group-label">Statut</label>
+                <select id="statut" class="animals-filters__group-select">
+                    <option value="">Tous les statuts</option>
+                    <option value="disponible">Disponible</option>
+                    <option value="reserve">Réservé</option>
+                    <option value="en-cours">En cours</option>
+                </select>
+            </div>
+            <button type="submit" class="cta__btn">Appliquer</button>
         </div>
-
-        <div class="animals-filters__group">
-            <label for="statut" class="animals-filters__group-label">Statut</label>
-            <select id="statut" class="animals-filters__group-select">
-                <option value="">Tous les statuts</option>
-                <option value="disponible">Disponible</option>
-                <option value="reserve">Réservé</option>
-                <option value="en-cours">En cours</option>
-            </select>
         </div>
-        <button type="submit" class="cta__btn">Appliquer</button>
-    </div>
 
     <div class="animals-filters" style="margin-top: 20px; padding: 16px 32px;">
         <div class="filters-results">
