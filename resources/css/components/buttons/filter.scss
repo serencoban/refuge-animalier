@@ -3,16 +3,23 @@
 .animals-filters {
     max-width: 1400px;
     margin: 0 auto;
-    padding: 32px;
     border-radius: 12px;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: end;
     gap: 20px;
+
+    &__container{
+        padding-top: 40px;
+        @include min-tablet{
+            padding-top: 20px;
+        }
+    }
     &__label{
         font-size: 16px;
         font-weight: 600;
         margin-right: 8px;
+        padding-bottom: 16px;
     }
     &__group{
         position: relative;
