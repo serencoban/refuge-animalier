@@ -15,15 +15,16 @@
     @include max-desktop{
         height: 50vh;
     }
-
     &__title{
         font-size: 40px;
+
         @include min-tablet{
             font-size: 22px;
         }
     }
     &__divider{
-        width: 260px;
+        width: 297px;
+        padding-bottom: 8px;
         @include min-tablet{
             width: 140px;
         }
@@ -38,7 +39,7 @@
     .contact__content{
         padding: 0 20px 22px;
         @include max-desktop{
-            padding: 0 120px 60px;
+            padding: 0 96px 60px;
         }
     }
 }
@@ -50,28 +51,55 @@
     gap: 24px;
     @include min-tablet{
         padding: 58px 40px;
+        grid-template-columns: 1fr;
     }
 
 }
 
 .form-aside{
+    position: relative;
     background-color: var(--olive-dark);
-
     border-radius: 4px;
     color: var(--white);
     &__title{
         font-size: 32px;
         padding: 20px 20px 0;
+        font-weight: 600;
+        line-height: 1.4;
+        position: relative;
+        z-index: 1;
     }
     &__text{
-        padding: 20px 20px 0;
+        padding: 20px;
+        position: relative;
+        z-index: 1;
+    }
+    &__decor{
+        position: absolute;
+        bottom: 0;
+        opacity: 0.5;
+
     }
 }
 .contact-form{
     background-color: var(--beige-light);
-    padding: 20px;
+    padding: 40px;
     border-radius: 8px;
     &__group{
-        margin-bottom: 22px;
+        margin-bottom: 32px;
+    }
+    &__input{
+        width: 100%;
+        display: inline-block;
+        box-sizing: border-box;
+    }
+    &__label{
+        padding-bottom: 8px;
+    }
+    &__small{
+        padding-bottom: 16px;
+        color: var(--olive-light);
+        display: block;
+        font-size: 12px;
     }
 }
