@@ -8,19 +8,13 @@
                 <path d="M2.5 2.5H316.5" stroke="#EDE0D4" stroke-width="5" stroke-linecap="round"/>
                 <path d="M44.5 12.5L295.391 3" stroke="#EDE0D4" stroke-width="5" stroke-linecap="round"/>
             </svg>
-            <p class="contact-hero__subtitle">
-                Devenez la personne qui, chaque jour, offrent de leur temps et de leur énergie pour prendre soin de nos animaux. Grâce à leur engagement, chaque animal reçoit l’attention et l’amour qu’il mérite.
-            </p>
+            <p class="contact-hero__subtitle">Devenez la personne qui, chaque jour, offrent de leur temps et de leur énergie pour prendre soin de nos animaux. Grâce à leur engagement, chaque animal reçoit l’attention et l’amour qu’il mérite.</p>
         </div>
     </section>
     <div class="aside__form__container">
-
         <aside class="form-aside">
             <h2 class="form-aside__title">Devenir bénévole, poser une question,...</h2>
-            <p class="form-aside__text">Devenez la personne qui, chaque jour, offrent de leur temps et de leur énergie
-                pour
-                prendre soin de nos animaux. Grâce à leur engagement, chaque animal reçoit l’attention et l’amour qu’il
-                mérite.</p>
+            <p class="form-aside__text">Devenez la personne qui offrent de leur temps et de leur énergie pour prendre soin de nos animaux.</p>
             <svg class="form-aside__decor" xmlns="http://www.w3.org/2000/svg" width="201" height="226"
                  viewBox="0 0 201 226"
                  fill="none">
@@ -34,7 +28,7 @@
         </aside>
         <section class="contact-form">
             <form class="contact-form__form" action="#" method="post">
-
+                <small class="contact-form__small">Les champs renseignés avec (*) sont obligatoires ! </small>
                 <div class="contact-form__group">
                     <label class="contact-form__label" for="firstname">Votre prénom*</label>
                     <input class="contact-form__input" type="text" name="firstname" id="firstname"
