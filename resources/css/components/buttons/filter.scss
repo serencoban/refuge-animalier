@@ -22,11 +22,6 @@
         padding-bottom: 16px;
         align-self: center;
     }
-    &__container{
-        @include max-tablet{
-            padding-top: 24px;
-        }
-    }
     &__group{
         position: relative;
         display: flex;

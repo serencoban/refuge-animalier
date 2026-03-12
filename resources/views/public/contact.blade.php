@@ -3,11 +3,11 @@
     <section class="contact-hero">
         <div class="contact__content">
             <h1 class="contact-hero__title">Nous contacter</h1>
-            <svg class="contact-hero__divider" width="319" height="15" viewBox="0 0 319 15"
-                 xmlns="http://www.w3.org/2000/svg">
-                <path d="M2.5 2.5H316.5" stroke="#EDE0D4" stroke-width="5" stroke-linecap="round"/>
-                <path d="M44.5 12.5L295.391 3" stroke="#EDE0D4" stroke-width="5" stroke-linecap="round"/>
+            <svg class="contact-hero__divider" width="260" height="10" viewBox="0 0 260 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line x1="1.5" y1="1.5" x2="258.5" y2="1.5" stroke="#EEE1D1" stroke-width="3" stroke-linecap="round"/>
+                <line x1="58.4474" y1="8.4492" x2="258.449" y2="1.55258" stroke="#EEE1D1" stroke-width="3" stroke-linecap="round"/>
             </svg>
+
             <p class="contact-hero__subtitle">Devenez la personne qui, chaque jour, offrent de leur temps et de leur énergie pour prendre soin de nos animaux. Grâce à leur engagement, chaque animal reçoit l’attention et l’amour qu’il mérite.</p>
         </div>
     </section>

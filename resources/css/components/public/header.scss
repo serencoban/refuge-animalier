@@ -46,6 +46,9 @@
 }
 .header__link{
     text-decoration: none;
+    &-mobile{
+        color: var(--white);
+    }
 }
 .mobile__nav-bar__menu{
     @include max-desktop{
