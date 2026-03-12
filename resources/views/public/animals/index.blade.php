@@ -1,8 +1,8 @@
 @include('components.public.header')
-<section class="contact-hero ">
+<section class="animals-hero bg-img__section ">
     <div class="contact__content">
         <h1 class="contact-hero__title">Nos animaux</h1>
-        <svg class="contact-hero__divider" width="319" height="15" viewBox="0 0 319 15"
+        <svg class="animals__divider" width="319" height="15" viewBox="0 0 319 15"
              xmlns="http://www.w3.org/2000/svg">
             <path d="M2.5 2.5H316.5" stroke="#EDE0D4" stroke-width="5" stroke-linecap="round"/>
             <path d="M44.5 12.5L295.391 3" stroke="#EDE0D4" stroke-width="5" stroke-linecap="round"/>

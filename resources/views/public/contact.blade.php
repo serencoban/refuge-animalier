@@ -1,11 +1,11 @@
 @include('components.public.header')
 <main>
-    <section class="contact-hero">
+    <section class="contact-hero bg-img__section">
         <div class="contact__content">
             <h1 class="contact-hero__title">Nous contacter</h1>
-            <svg class="contact-hero__divider" width="260" height="10" viewBox="0 0 260 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <line x1="1.5" y1="1.5" x2="258.5" y2="1.5" stroke="#EEE1D1" stroke-width="3" stroke-linecap="round"/>
-                <line x1="58.4474" y1="8.4492" x2="258.449" y2="1.55258" stroke="#EEE1D1" stroke-width="3" stroke-linecap="round"/>
+            <svg class="contact-hero__divider" width="346" height="12" viewBox="0 0 346 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line x1="1.6" y1="1.60001" x2="344.4" y2="1.60001" stroke="#EEE1D1" stroke-width="3.2" stroke-linecap="round"/>
+                <line x1="53.5559" y1="9.55708" x2="344.357" y2="1.64413" stroke="#EEE1D1" stroke-width="3.2" stroke-linecap="round"/>
             </svg>
 
             <p class="contact-hero__subtitle">Devenez la personne qui, chaque jour, offrent de leur temps et de leur énergie pour prendre soin de nos animaux. Grâce à leur engagement, chaque animal reçoit l’attention et l’amour qu’il mérite.</p>
@@ -30,24 +30,24 @@
             <form class="contact-form__form" action="#" method="post">
                 <small class="contact-form__small">Les champs renseignés avec (*) sont obligatoires ! </small>
                 <div class="contact-form__group">
-                    <label class="contact-form__label" for="firstname">Votre prénom*</label>
+                    <label class="contact-form__label" for="firstname">Votre prénom <small>*</small></label>
                     <input class="contact-form__input" type="text" name="firstname" id="firstname"
                            placeholder="ex: Jane">
                 </div>
 
                 <div class="contact-form__group">
-                    <label class="contact-form__label" for="lastname">Votre nom*</label>
+                    <label class="contact-form__label" for="lastname">Votre nom <small>*</small></label>
                     <input class="contact-form__input" type="text" name="lastname" id="lastname" placeholder="ex: Doe">
                 </div>
 
                 <div class="contact-form__group">
-                    <label class="contact-form__label" for="email">Votre email*</label>
+                    <label class="contact-form__label" for="email">Votre email <small>*</small></label>
                     <input class="contact-form__input" type="email" name="email" id="email"
                            placeholder="ex: janedoe@gmail.com">
                 </div>
 
                 <div class="contact-form__group">
-                    <label class="contact-form__label" for="message">Votre message*</label>
+                    <label class="contact-form__label" for="message">Votre message <small>*</small></label>
                     <textarea class="contact-form__input" id="message" name="message" rows="5"
                               placeholder="ex: Je voudrais rejoindre votre équipe pour ..."></textarea>
                 </div>
