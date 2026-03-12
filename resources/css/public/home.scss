@@ -62,7 +62,7 @@
     max-width: 1400px;
     margin: 0 auto;
     @include max-desktop{
-        padding: 0 96px 76px;
+        padding: 0 96px 26px;
         flex-direction: row;
         transform: translateY(-40px);
     }
