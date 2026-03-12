@@ -31,9 +31,9 @@
             <span></span>
             <div role="navigation" id="mobileMenu" class="sidenav" aria-hidden="true">
                 <ul class="menu">
-                    <li class="menu-item"><a href="{{ __('/') }}">Accueil</a></li>
-                    <li class="menu-item"><a href="{{ __('/animals.index') }}">Nos animaux</a></li>
-                    <li class="menu-item"><a href="{{ __('/contact') }}">Nous contacter</a></li>
+                    <li class="menu-item"><a class="header__link-mobile" href="{{ __('/') }}">Accueil</a></li>
+                    <li class="menu-item"><a class="header__link-mobile" href="{{ __('/animals.index') }}">Nos animaux</a></li>
+                    <li class="menu-item"><a class="header__link-mobile" href="{{ __('/contact') }}">Nous contacter</a></li>
                 </ul>
             </div>
         </div>
