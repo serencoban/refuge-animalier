@@ -58,15 +58,14 @@
                     <option value="en-cours">En cours</option>
                 </select>
             </div>
-            <button type="submit" class="cta__btn">Appliquer</button>
+            <button type="submit" class="cta__btn cta__apply">Appliquer</button>
         </div>
         </div>
 
-    <div class="animals-filters" style="margin-top: 20px; padding: 16px 32px;">
-        <div class="filters-results">
+        <div class="filtered-results">
             <span>12 animaux trouvés</span>
         </div>
-    </div>
+
     <div class="animals__grid">
         @for($i = 1; $i <=8 ; $i++)
             <x-public.animal-card></x-public.animal-card>

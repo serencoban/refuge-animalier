@@ -4,28 +4,35 @@
     max-width: 1400px;
     margin: 0 auto;
     border-radius: 12px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: end;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
 
-    &__container{
-        padding-top: 40px;
-        @include min-tablet{
-            padding-top: 20px;
-        }
+    grid-gap: 16px;
+    @include min-tablet{
+        grid-template-columns: repeat(2, 1fr);
     }
+    @include mobile{
+        grid-template-columns: 1fr;
+    }
+
     &__label{
         font-size: 16px;
         font-weight: 600;
         margin-right: 8px;
         padding-bottom: 16px;
+        align-self: center;
+    }
+    &__container{
+        @include max-tablet{
+            padding-top: 24px;
+        }
     }
     &__group{
         position: relative;
         display: flex;
         flex-direction: column;
         gap: 6px;
+        min-width: 160px;
     }
     &__group-label{
         font-size: 12px;
@@ -51,9 +58,6 @@
             font-size: 13px;
         }
     }
-    @include min-tablet{
-
-    }
 }
 
 
@@ -68,13 +72,18 @@
     transform: scale(1.2);
 }
 
-.filters-results {
-    margin-top: 12px;
+.filtered-results {
+    padding: 32px 0;
     font-size: 14px;
-    color: var(--gray-600);
     width: 100%;
     display: flex;
     align-items: center;
     gap: 12px;
     flex-wrap: wrap;
+}
+
+.cta__apply{
+    @include min-tablet{
+       grid-column: 1/-1;
+    }
 }
