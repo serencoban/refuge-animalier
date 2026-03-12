@@ -11,7 +11,7 @@
             <p class="contact-hero__subtitle">Devenez la personne qui, chaque jour, offrent de leur temps et de leur énergie pour prendre soin de nos animaux. Grâce à leur engagement, chaque animal reçoit l’attention et l’amour qu’il mérite.</p>
         </div>
     </section>
-    <div class="aside__form__container">
+    <div class="aside__form__container container">
         <aside class="form-aside">
             <h2 class="form-aside__title">Devenir bénévole, poser une question,...</h2>
             <p class="form-aside__text">Devenez la personne qui offrent de leur temps et de leur énergie pour prendre soin de nos animaux.</p>

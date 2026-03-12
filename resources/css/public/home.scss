@@ -18,9 +18,10 @@
 
     &__content{
         width: 100%;
-        margin: 0 auto;
         padding: 0 20px 80px;
         color: var(--white);
+        max-width: 1400px;
+        margin: 0 auto;
         @include max-tablet{
             padding: 0 0 120px 96px ;
         }
@@ -58,6 +59,8 @@
     justify-content: space-around;
     transform: translateY(-40px);
     padding: 0 20px 32px;
+    max-width: 1400px;
+    margin: 0 auto;
     @include max-desktop{
         padding: 0 96px 76px;
         flex-direction: row;
