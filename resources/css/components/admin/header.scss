@@ -1,6 +1,9 @@
-.dashboard{
-    background-color: red;
+.topbar{
+    display: flex;
+    justify-content: space-around;
 }
-main{
-    background-color: red;
+.topbar__container{
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
 }

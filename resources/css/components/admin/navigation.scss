@@ -1,0 +1,61 @@
+.admin{
+    &__sidebar{
+        background-color: var(--white);
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        //position: fixed;
+        //top: 0; left: 0; bottom: 0;
+        //z-index: 100;
+        @include min-tablet{
+            display: none;
+        }
+    }
+    &__logout{
+        margin: 22px;
+        padding: 12px 40px;
+        background-color: var(--white);
+        border: 1px solid var(--grey-light);
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    &__logo{
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--olive-light);
+        padding: 24px 28px;
+        border-bottom: 1px solid var(--grey-light);
+        margin-bottom: 16px;
+        line-height: 1.4;
+    }
+    &__menu{
+        display: flex;
+        flex-direction: column;
+        &-item{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 18px 24px;
+            cursor: pointer;
+            transition: background 0.15s;
+        }
+        &-item:hover{
+            background-color: var(--form-olive);
+        }
+        &-item--active{
+            background-color: red;
+            border-right: 3px solid var(--form-olive);
+        }
+        &-link{
+            color: var(--olive-light);
+        }
+        &-icon{
+            fill: var(--olive-light);
+        }
+    }
+}
+
