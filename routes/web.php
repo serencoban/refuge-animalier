@@ -14,3 +14,6 @@ Route::get('/animals.index', function () {
 Route::get('/animals.show', function () {
     return view('pages.public.animals.show');
 });
+Route::get('/dashboard', function () {
+    return view('pages.admin.dashboard');
+});
