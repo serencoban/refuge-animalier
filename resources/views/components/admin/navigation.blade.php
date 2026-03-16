@@ -38,4 +38,21 @@
         </svg>
         <span class="admin__logout-text">Déconnexion</span>
     </div>
+
+    <div id="menuToggle">
+        <label for="menuCheckbox" class="visually-hidden">checkbox menu</label>
+        <input type="checkbox"
+               id="menuCheckbox"
+               aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+        <div role="navigation" id="mobileMenu" class="sidenav" aria-hidden="true">
+            <ul class="menu">
+                <li class="menu-item"><a class="header__link-mobile" href="{{ __('/') }}">Accueil</a></li>
+                <li class="menu-item"><a class="header__link-mobile" href="{{ __('/animals.index') }}">Nos animaux</a></li>
+                <li class="menu-item"><a class="header__link-mobile" href="{{ __('/contact') }}">Nous contacter</a></li>
+            </ul>
+        </div>
+    </div>
 </nav>
