@@ -11,11 +11,14 @@
 @import "components/admin/header.scss";
 @import "components/admin/navigation.scss";
 
-@import "components/buttons/cta";
-@import "components/buttons/filter.scss";
+@import "components/elements/cta";
+@import "components/elements/filter.scss";
+@import "components/elements/notif.scss";
+@import "components/elements/table.scss";
 
 @import "settings/colors.scss";
 @import "settings/reset.scss";
+@import "settings/size.scss";
 
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
 @source '../../storage/framework/views/*.php';

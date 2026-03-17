@@ -1,12 +1,11 @@
 .admin{
     &__sidebar{
-        background-color: var(--white);
+        background-color: var(--grey-light);
         display: flex;
         justify-content: space-between;
         flex-direction: column;
-        //position: fixed;
-        //top: 0; left: 0; bottom: 0;
-        //z-index: 100;
+        border-right: 1px solid #e3e3e3;
+        max-width: 224px;
         @include min-tablet{
             display: none;
         }
@@ -22,14 +21,13 @@
         gap: 8px;
     }
     &__logo{
-        font-size: 11px;
+        font-size: 20px;
         font-weight: 700;
         letter-spacing: 0.12em;
         text-transform: uppercase;
-        color: var(--olive-light);
+        color: var(--olive-dark);
         padding: 24px 28px;
         border-bottom: 1px solid var(--grey-light);
-        margin-bottom: 16px;
         line-height: 1.4;
     }
     &__menu{
@@ -44,10 +42,10 @@
             transition: background 0.15s;
         }
         &-item:hover{
-            background-color: var(--form-olive);
+            background-color: var(--white);
+
         }
         &-item--active{
-            background-color: red;
             border-right: 3px solid var(--form-olive);
         }
         &-link{
