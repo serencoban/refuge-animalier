@@ -7,15 +7,17 @@
             <div class="dashboard__header">
                 <h2 class="dashboard__title">Bonjour Elise !</h2>
                 <div class="dashboard__action">
-                    <div>
+                    <div class="select__container">
                         <label for="">Trier par</label>
-                        <select>
-                            <option value="today">Aujourd'hui</option>
-                            <option value="week">Cette semaine</option>
-                            <option value="month">Ce mois-ci</option>
-                            <option value="three-month">Les 3 derniers mois</option>
-                            <option value="year">Cette année</option>
-                        </select>
+                        <div class="select">
+                            <select>
+                                <option value="today">Aujourd'hui</option>
+                                <option value="week">Cette semaine</option>
+                                <option value="month">Ce mois-ci</option>
+                                <option value="three-month">Les 3 derniers mois</option>
+                                <option value="year">Cette année</option>
+                            </select>
+                        </div>
                     </div>
                     <a class="dashboard__action-link" href="#">
                         Exporter un rapport
@@ -126,17 +128,14 @@
 
             <div class="dashboard__messages">
                 <section class="dashboard__notifications">
-                    <h3 class="dashboard__section-title">
-                        Notifications
-                        <span class="notif-badge">3</span>
-                    </h3>
+                    <h3 class="dashboard__section-title">Notifications<span class="notif-badge">3</span></h3>
                     <div class="notification-item">Nouvelle demande d’adoption pour Moka</div>
                     <div class="notification-item">Tâche en attente : valider la fiche de Sarah</div>
                 </section>
 
                 <section class="dashboard__recent-messages">
                     <div class="messages-header">
-                        <h3 class="dashboard__section-title">Messages récentes</h3>
+                        <h3>Messages récentes</h3>
                         <a href="#" class="btn-new-message">+ Nouveau message</a>
                     </div>
 
