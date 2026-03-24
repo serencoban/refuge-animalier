@@ -2,7 +2,7 @@
     <div class="admin__menu">
         <h2 class="admin__logo">Les Pattes Heureuses</h2>
 
-        <div class="admin__menu-item">
+        <div class="admin__menu-item admin__menu-item-active">
             <svg class="admin__menu-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                 <path d="M7.5 1.23088V4.92353H1.25L1.25 1.23088H7.5ZM1.25 0C0.559644 0 0 0.551085 0 1.23088V4.92353C0 5.60333 0.559644 6.15442 1.25 6.15442H7.5C8.19036 6.15442 8.75 5.60333 8.75 4.92353V1.23088C8.75 0.551085 8.19036 0 7.5 0H1.25Z" />
                 <path d="M18.75 14.7706V18.4633H12.5V14.7706H18.75ZM12.5 13.5397C11.8096 13.5397 11.25 14.0908 11.25 14.7706V18.4633C11.25 19.1431 11.8096 19.6941 12.5 19.6941H18.75C19.4404 19.6941 20 19.1431 20 18.4633V14.7706C20 14.0908 19.4404 13.5397 18.75 13.5397H12.5Z" />
@@ -44,9 +44,6 @@
     </div>
 
     <div class="admin__logout">
-        <svg class="admin__logout-icon" width="20" height="20" viewBox="0 0 20 20">
-            <path d="M3 3a1 1 0 00-1 1v12a1 1 0 102 0V4a1 1 0 00-1-1zm10.293 9.293a1 1 0 001.414 1.414l3-3a1 1 0 000-1.414l-3-3a1 1 0 10-1.414 1.414L14.586 9H7a1 1 0 100 2h7.586l-1.293 1.293z"/>
-        </svg>
         <span class="admin__logout-text">Déconnexion</span>
     </div>
 

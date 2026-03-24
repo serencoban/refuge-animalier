@@ -22,12 +22,13 @@
     }
     & tbody tr:hover td {
         background: var(--grey-light);
+        cursor: pointer;
     }
 }
 
 .status-badge {
     display: inline-block;
-    padding: 4px 12px;
+    padding: 8px 16px;
     border-radius: var(--border-radius);
     font-size: 12px;
     font-weight: 600;

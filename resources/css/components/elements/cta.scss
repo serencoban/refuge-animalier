@@ -35,3 +35,55 @@
     font-weight: 400;
     transition: all 0.3s ease;
 }
+
+.btn-new-message {
+    background: var(--olive-light);
+    color: white;
+    border: none;
+    padding: 12px 16px;
+    border-radius: var(--border-radius);
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.15s;
+}
+.btn-new-message:hover { background: var(--olive-dark); }
+
+select{
+    appearance: none;
+    background-color: transparent;
+    border: 1px solid var(--border-stroke);
+    border-radius: 4px;
+    padding: 8px;
+    text-align: center;
+    font-family: inherit;
+    cursor: pointer;
+
+}
+
+.select{
+    display: grid;
+    grid-template-areas: "select";
+    align-items: center;
+
+
+}
+.select__container{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+.select:after {
+    content: "";
+    width: 0.8em;
+    height: 0.5em;
+    background-color: var(--border-stroke);
+    clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+    justify-self: end;
+}
+
+select,
+.select:after {
+    grid-area: select;
+}

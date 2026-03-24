@@ -8,7 +8,7 @@
     max-width: calc(var(--sidebar-width) + 900px);
     &__container{
         background-color: var(--white);
-        padding: 40px 20px 0;
+        padding: 40px 20px;
     }
     &__header{
         display: flex;
@@ -28,7 +28,7 @@
             text-decoration: none;
             font-size: 14px;
             font-weight: 500;
-            padding: 9px 18px;
+            padding: 12px 20px;
             border-radius: var(--border-radius);
             transition: background 0.15s, color 0.15s;
             cursor: pointer;
@@ -36,6 +36,10 @@
             align-items: center;
             gap: 6px;
             background-color: var(--olive-light);
+            color: var(--white);
+            &:hover{
+                background-color: var(--olive-dark);
+            }
         }
     }
 
@@ -51,23 +55,29 @@
         margin-bottom: 20px;
     }
 
-    &__validation{
+    &__validation, .dashboard__notifications{
         display: flex;
         flex-direction: column;
+        background-color: var(--color-white);
+        border: 1px solid var(--grey-light);
+        border-radius: var(--border-radius);
+        box-shadow: var(--grey-light);
 
     &-footer{
         margin-top: auto;
         display: block;
         text-align: center;
-        padding-top: 14px;
+        padding: 14px 24px;
         border-top: 1px solid var(--grey-light);
         font-size: 14px;
         color: var(--black-soft);
         font-weight: 500;
         cursor: pointer;
         transition: color 0.15s;
-        &:hover { color: var(--olive-light); }
-
+        &:hover {
+            color: var(--olive-dark);
+            background-color: var(--grey-light);
+        }
     }
 
     }
@@ -77,15 +87,18 @@
         display: flex;
         align-items: center;
         gap: 8px;
-        margin-bottom: 16px;
+        padding: 24px 24px 16px;
+    }
+    &__recent-messages{
+        background-color: var(--color-white);
+        border: 1px solid var(--grey-light);
+        border-radius: var(--border-radius);
+        box-shadow: var(--grey-light);
     }
 
 }
 
 .dashboard__adoption-requests,
-.dashboard__validation,
-.dashboard__notifications,
-.dashboard__recent-messages,
 .stats__card{
     background-color: var(--color-white);
     border: 1px solid var(--grey-light);
@@ -148,12 +161,14 @@
     flex-direction: column;
     justify-content: space-between;
 }
-.fiche-item {
+.fiche-item, .notification-item {
     font-size: 14px;
-    padding: 16px 0;
+    padding: 20px 24px;
     border-bottom: 1px solid var(--grey-light);
     &:last-of-type { border-bottom: none; }
+    &:hover{background-color: var(--grey-light); cursor: pointer;}
 }
+
 
 
 
@@ -163,45 +178,35 @@
     gap: 16px;
 }
 
-.notification-item {
-    font-size: 14px;
-    padding: 12px 0;
-    border-bottom: 1px solid var(--grey-light);
-}
 .notification-item:last-of-type { border-bottom: none; }
-
 
 .messages-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 16px;
+    padding: 24px 24px 16px;
+    & h3{
+        font-size: 16px;
+        font-weight: 600;
+    }
 }
 .messages-header .dashboard__section-title { margin-bottom: 0; }
 
-.btn-new-message {
-    background: var(--olive-light);
-    color: white;
-    border: none;
-    padding: 8px 16px;
-    border-radius: var(--border-radius);
-    font-size: 13px;
-    font-weight: 600;
-    cursor: pointer;
-    text-decoration: none;
-    transition: background 0.15s;
-}
-.btn-new-message:hover { background: var(--olive-dark); }
+
 
 .message-item {
-    padding: 14px 0;
+    padding: 16px 24px;
     border-bottom: 1px solid var(--grey-light);
+}
+.message-item:hover{
+    background-color: var(--grey-light);
+    cursor: pointer;
 }
 .message-item:last-of-type { border-bottom: none; }
 
 .message-item__sender { font-size: 14px; font-weight: 700; margin-bottom: 4px; }
-.message-item__body   { font-size: 13px; color: var(--color-text-muted); line-height: 1.5; margin-bottom: 5px; }
-.message-item__time   { font-size: 12px; color: var(--color-text-label); }
+.message-item__body   { font-size: 13px; line-height: 1.5; margin-bottom: 5px; }
+.message-item__time   { font-size: 12px; color: var(--grey-dark); }
 
 
 ::-webkit-scrollbar { width: 5px; }

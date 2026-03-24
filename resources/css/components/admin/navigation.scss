@@ -19,6 +19,10 @@
         display: flex;
         align-items: center;
         gap: 8px;
+        &:hover{
+            background-color: var(--olive-light);
+            color: var(--white);
+        }
     }
     &__logo{
         font-size: 20px;
@@ -45,14 +49,15 @@
             background-color: var(--white);
 
         }
-        &-item--active{
+        &-item-active{
             border-right: 3px solid var(--form-olive);
+            background-color: var(--white);
         }
         &-link{
-            color: var(--olive-light);
+            color: var(--black-soft);
         }
         &-icon{
-            fill: var(--olive-light);
+            fill: var(--black-soft);
         }
     }
 }
