@@ -74,7 +74,7 @@
 
             <div class="dashboard__adoptions">
                 <section class="dashboard__adoption-requests">
-                    <h3 class="dashboard__section-title">
+                    <h3>
                         Demandes d'adoption
                         <span class="notif-badge">3</span>
                     </h3>
@@ -114,6 +114,26 @@
                         </tr>
                         </tbody>
                     </table>
+
+                    <!-- Cartes mobile (en plus du tableau existant) -->
+                    <div class="adoption-cards">
+                        <div class="adoption-card">
+                            <div class="adoption-card__header">
+                                <span class="adoption-card__name">Moka</span>
+                                <span class="status-badge status-badge--waiting">En attente</span>
+                            </div>
+                            <div class="adoption-card__body">
+                                <div class="adoption-card__row">
+                                    <span class="adoption-card__label">Adopteur</span>
+                                    <span>Sarah Smith</span>
+                                </div>
+                                <div class="adoption-card__row">
+                                    <span class="adoption-card__label">Date</span>
+                                    <span>05/11/25</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </section>
 
                 <section class="dashboard__validation">
@@ -125,6 +145,7 @@
                     <a href="#" class="dashboard__validation-footer">Voir toutes les fiches</a>
                 </section>
             </div>
+
 
             <div class="dashboard__messages">
                 <section class="dashboard__notifications">

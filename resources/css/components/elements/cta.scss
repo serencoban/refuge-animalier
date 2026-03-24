@@ -68,11 +68,18 @@ select{
     align-items: center;
 
 
+
 }
 .select__container{
     display: flex;
     gap: 8px;
     align-items: center;
+
+}
+.select__container label{
+    @include min-tablet{
+        font-size: 12px;
+    }
 }
 .select:after {
     content: "";
@@ -86,4 +93,7 @@ select{
 select,
 .select:after {
     grid-area: select;
+    @include min-tablet{
+        font-size: 12px;
+    }
 }
