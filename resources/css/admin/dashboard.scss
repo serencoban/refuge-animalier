@@ -1,3 +1,5 @@
+@import "../settings/breakpoints";
+
 .admin{
     display: flex;
     min-height: 100vh;
@@ -6,6 +8,9 @@
     flex: 1;
     padding: calc(var(--topbar-height) + 28px) 32px 40px;
     max-width: calc(var(--sidebar-width) + 900px);
+    @include min-tablet{
+        width: 100%;
+    }
     &__container{
         background-color: var(--white);
         padding: 40px 20px;
@@ -15,10 +20,17 @@
         align-items: center;
         justify-content: space-between;
         margin-bottom: 28px;
+        @include mobile{
+            flex-direction: column;
+        }
     }
     &__title{
         font-size: 26px;
         font-weight: 700;
+        @include min-tablet{
+            font-size: 20px;
+            padding-bottom: 20px;
+        }
     }
     &__action{
         display: flex;
@@ -40,6 +52,9 @@
             &:hover{
                 background-color: var(--olive-dark);
             }
+            @include min-tablet{
+                font-size: 12px;
+            }
         }
     }
 
@@ -53,6 +68,10 @@
         grid-template-columns: 2fr 1fr;
         gap: 16px;
         margin-bottom: 20px;
+        @include min-tablet{
+            grid-template-columns: 1fr;
+        }
+
     }
 
     &__validation, .dashboard__notifications{
@@ -95,6 +114,14 @@
         border-radius: var(--border-radius);
         box-shadow: var(--grey-light);
     }
+    &__messages{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 16px;
+        @include min-tablet{
+            grid-template-columns: 1fr;
+        }
+    }
 
 }
 
@@ -106,7 +133,14 @@
     padding: 24px;
     box-shadow: var(--grey-light);
 }
-
+.dashboard__adoption-requests h3{
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-bottom: 16px;
+}
 
 .stats{
     display: grid;
@@ -137,6 +171,9 @@
         font-size: 34px;
         font-weight: 600;
         line-height: 1;
+        @include min-tablet{
+            font-size: 22px;
+        }
     }
     &__icon{
         width: 50px; height: 50px;
@@ -155,6 +192,10 @@
             background: var(--admin-green); fill: var(--white);
         }
     }
+    @include min-tablet{
+        grid-template-columns: 1fr;
+    }
+
 }
 .fiches{
     display: flex;
@@ -167,15 +208,6 @@
     border-bottom: 1px solid var(--grey-light);
     &:last-of-type { border-bottom: none; }
     &:hover{background-color: var(--grey-light); cursor: pointer;}
-}
-
-
-
-
-.dashboard__messages {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 16px;
 }
 
 .notification-item:last-of-type { border-bottom: none; }

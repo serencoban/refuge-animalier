@@ -1,3 +1,5 @@
+@import "../../settings/breakpoints.scss";
+
 .topbar{
     //position: fixed;
     //top: 0;
@@ -64,5 +66,10 @@
         font-weight: 700;
         color: white;
         letter-spacing: 0.04em;
+    }
+    &__username{
+        @include min-tablet{
+            display: none;
+        }
     }
 }
