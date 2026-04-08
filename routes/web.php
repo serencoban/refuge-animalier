@@ -2,18 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('pages.public.home');
-});
-Route::get('/contact', function () {
-    return view('pages.public.contact');
-});
-Route::get('/animals.index', function () {
-    return view('pages.public.animals.index');
-});
-Route::get('/animals.show', function () {
-    return view('pages.public.animals.show');
-});
-Route::get('/dashboard', function () {
-    return view('pages.admin.dashboard');
-});
+
+Route::get('/', [\App\Http\Controllers\HomeController::class, 'home'])->name('public.home');
+Route::get('/contact', [\App\Http\Controllers\ContactController::class, 'index'])->name('public.contact');
+Route::get('/animals', [\App\Http\Controllers\AnimalController::class, 'index'])->name('public.animals.index');
+Route::get('/animals/{animal}', [\App\Http\Controllers\AnimalController::class, 'show'])->name('public.animals.show');
