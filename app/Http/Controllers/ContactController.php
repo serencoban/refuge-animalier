@@ -8,4 +8,9 @@ class ContactController extends Controller
     {
         return view('pages.public.contact');
     }
+
+    public function store()
+    {
+
+    }
 }
