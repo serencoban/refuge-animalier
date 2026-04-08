@@ -8,7 +8,7 @@
                 Nous accueillons chaque année des dizaines d'animaux dans le besoin.
                 Découvrez-les et aidez-les à trouver un nouveau foyer.
             </p>
-            <a href="{{ __('/contact') }}" class="cta__btn">Nous contacter</a>
+            <a href="{{ route('public.contact') }}" class="cta__btn">Nous contacter</a>
         </div>
     </section>
     <section class="steps">
@@ -17,7 +17,7 @@
                 <span class="steps__number">1</span>
                 <p class="steps__text">Choisissez votre compagnon</p>
             </div>
-            <a class="steps__link" href="{{__('/animals.show')}}">
+            <a class="steps__link" href="{{__('/')}}">
                 <span class="steps__link__arrow">
                     <svg xmlns="http://www.w3.org/2000/svg" width="23" height="8" viewBox="0 0 23 8">
                         <path d="M22.3536 4.03556C22.5488 3.8403 22.5488 3.52372 22.3536 3.32845L19.1716 0.146473C18.9763 -0.0487893 18.6597 -0.0487893 18.4645 0.146473C18.2692 0.341735 18.2692 0.658318 18.4645 0.85358L21.2929 3.68201L18.4645 6.51043C18.2692 6.7057 18.2692 7.02228 18.4645 7.21754C18.6597 7.4128 18.9763 7.4128 19.1716 7.21754L22.3536 4.03556ZM0 3.68201V4.18201H22V3.68201V3.18201H0V3.68201Z" fill="#443024"/>
@@ -30,7 +30,7 @@
                 <span class="steps__number">2</span>
                 <p class="steps__text">Rencontrez-le au refuge</p>
             </div>
-            <a class="steps__link" href="{{__('/animals.index')}}">
+            <a class="steps__link" href="{{route('public.animals.index')}}">
                 <span class="steps__link__arrow">
                     <svg xmlns="http://www.w3.org/2000/svg" width="23" height="8" viewBox="0 0 23 8">
                         <path d="M22.3536 4.03556C22.5488 3.8403 22.5488 3.52372 22.3536 3.32845L19.1716 0.146473C18.9763 -0.0487893 18.6597 -0.0487893 18.4645 0.146473C18.2692 0.341735 18.2692 0.658318 18.4645 0.85358L21.2929 3.68201L18.4645 6.51043C18.2692 6.7057 18.2692 7.02228 18.4645 7.21754C18.6597 7.4128 18.9763 7.4128 19.1716 7.21754L22.3536 4.03556ZM0 3.68201V4.18201H22V3.68201V3.18201H0V3.68201Z" fill="#443024"/>
@@ -74,7 +74,7 @@
                 <p class="about__text">Chaque histoire est unique, et nous mettons tout en œuvre pour leur redonner
                     confiance, santé et amour </p>
             </div>
-            <a href="{{ __('/contact') }}" class="cta__btn">Rejoignez-nous</a>
+            <a href="{{route('public.contact') }}" class="cta__btn">Rejoignez-nous</a>
         </div>
         <div class="about__media">
             <img class="about__media__image" src="{{ asset('img/mission.png') }}" alt="Refuge">
