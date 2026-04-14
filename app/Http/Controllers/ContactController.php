@@ -6,7 +6,7 @@ class ContactController extends Controller
 {
     public function index()
     {
-        return view('pages.public.contact');
+        return view('public.contact');
     }
 
     public function store()
