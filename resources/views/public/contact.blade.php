@@ -1,20 +1,26 @@
-@include('components.public.header')
+@include('components.partials.header')
 <main>
     <section class="contact-hero bg-img__section">
         <div class="contact__content">
             <h1 class="contact-hero__title">Nous contacter</h1>
-            <svg class="contact-hero__divider" width="346" height="12" viewBox="0 0 346 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <line x1="1.6" y1="1.60001" x2="344.4" y2="1.60001" stroke="#EEE1D1" stroke-width="3.2" stroke-linecap="round"/>
-                <line x1="53.5559" y1="9.55708" x2="344.357" y2="1.64413" stroke="#EEE1D1" stroke-width="3.2" stroke-linecap="round"/>
+            <svg class="contact-hero__divider" width="346" height="12" viewBox="0 0 346 12" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+                <line x1="1.6" y1="1.60001" x2="344.4" y2="1.60001" stroke="#EEE1D1" stroke-width="3.2"
+                      stroke-linecap="round"/>
+                <line x1="53.5559" y1="9.55708" x2="344.357" y2="1.64413" stroke="#EEE1D1" stroke-width="3.2"
+                      stroke-linecap="round"/>
             </svg>
 
-            <p class="contact-hero__subtitle">Devenez la personne qui, chaque jour, offrent de leur temps et de leur énergie pour prendre soin de nos animaux. Grâce à leur engagement, chaque animal reçoit l’attention et l’amour qu’il mérite.</p>
+            <p class="contact-hero__subtitle">Devenez la personne qui, chaque jour, offrent de leur temps et de leur
+                énergie pour prendre soin de nos animaux. Grâce à leur engagement, chaque animal reçoit l’attention et
+                l’amour qu’il mérite.</p>
         </div>
     </section>
     <div class="aside__form__container container">
         <aside class="form-aside">
             <h2 class="form-aside__title">Devenir bénévole, poser une question,...</h2>
-            <p class="form-aside__text">Devenez la personne qui offrent de leur temps et de leur énergie pour prendre soin de nos animaux.</p>
+            <p class="form-aside__text">Devenez la personne qui offrent de leur temps et de leur énergie pour prendre
+                soin de nos animaux.</p>
             <svg class="form-aside__decor" xmlns="http://www.w3.org/2000/svg" width="201" height="226"
                  viewBox="0 0 201 226"
                  fill="none">
@@ -58,4 +64,4 @@
         </section>
     </div>
 </main>
-@include('components.public.footer')
+@include('components.partials.footer')

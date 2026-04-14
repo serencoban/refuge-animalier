@@ -1,4 +1,4 @@
-@include('components.public.header')
+@include('components.partials.header')
 <main>
     <section class="animal-info container">
         <div class="animal-info__image">
@@ -73,7 +73,8 @@
                 <div class="form__appointment__flex">
                     <div class="rdv__input__container">
                         <label class="rdv__label" for="email">Email*</label>
-                        <input class="rdv__input" type="email" name="email" id="email" placeholder="ex: janedoe@gmail.com">
+                        <input class="rdv__input" type="email" name="email" id="email"
+                               placeholder="ex: janedoe@gmail.com">
                     </div>
                     <div class="rdv__input__container">
                         <label class="rdv__label" for="tel">Numéro de téléphone*</label>
@@ -82,7 +83,8 @@
                 </div>
                 <div class="rdv__input__container">
                     <label for="desc">Description*</label>
-                    <textarea class="rdv__input" name="desc" id="desc" cols="30" rows="10" placeholder="ex: J'aimerai prendre rendez-vous pour le..."></textarea>
+                    <textarea class="rdv__input" name="desc" id="desc" cols="30" rows="10"
+                              placeholder="ex: J'aimerai prendre rendez-vous pour le..."></textarea>
                 </div>
                 <div class="rdv__btn__container">
                     <button class="cta__btn" type="submit">Envoyer le formulaire</button>
@@ -105,4 +107,4 @@
         <a href="#" class="cta__btn">Voir tous les animaux</a>
     </section>
 </main>
-@include('components.public.footer')
+@include('components.partials.footer')
