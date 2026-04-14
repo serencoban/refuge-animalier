@@ -1,4 +1,4 @@
-@include('components.public.header')
+@include('components.partials.header')
 <section class="animals-hero bg-img__section ">
     <div class="contact__content">
         <h1 class="contact-hero__title">Nos animaux</h1>
@@ -8,12 +8,13 @@
             <path d="M44.5 12.5L295.391 3" stroke="#EDE0D4" stroke-width="5" stroke-linecap="round"/>
         </svg>
         <p class="contact-hero__subtitle">
-            Parcourez les profils de nos chiens, chats et petits compagnons en attente d’un nouveau foyer. Chaque animal a son histoire, son caractère et ses besoins : peut-être trouverez-vous ici votre futur compagnon de vie.
+            Parcourez les profils de nos chiens, chats et petits compagnons en attente d’un nouveau foyer. Chaque animal
+            a son histoire, son caractère et ses besoins : peut-être trouverez-vous ici votre futur compagnon de vie.
         </p>
     </div>
 </section>
 <section class="container">
-    <div class="animals-filters__container" >
+    <div class="animals-filters__container">
         <p class="animals-filters__label">Filtrer par:</p>
         <div class="animals-filters">
             <div class="animals-filters__group">
@@ -60,11 +61,11 @@
             </div>
             <button type="submit" class="cta__btn cta__apply">Appliquer</button>
         </div>
-        </div>
+    </div>
 
-        <div class="filtered-results">
-            <span>12 animaux trouvés</span>
-        </div>
+    <div class="filtered-results">
+        <span>12 animaux trouvés</span>
+    </div>
 
     <div class="animals__grid">
         @for($i = 1; $i <=8 ; $i++)
@@ -72,4 +73,4 @@
         @endfor
     </div>
 </section>
-@include('components.public.footer')
+@include('components.partials.footer')
