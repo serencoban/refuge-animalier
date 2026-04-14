@@ -16,7 +16,7 @@ class AnimalController extends Controller
         Animal::findOrFail($animal);
         return view('pages.public.animals.show');
     }
-    
+
 }
 
 
