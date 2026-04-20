@@ -55,8 +55,8 @@
         <p class="animals__description">Parcourez les fiches de nos animaux disponibles à l’adoption. Chacun d’eux
             attend une nouvelle famille où il pourra s’épanouir et être aimé comme il le mérite</p>
         <div class="animals__grid">
-            @for($i = 1; $i <=4 ; $i++)
-                <x-public.animal-card></x-public.animal-card>
+            @for($i = 1; $i <=4; $i++)
+                <x-public.animals.animal-card></x-public.animals.animal-card>
             @endfor
         </div>
         <a href="#" class="cta__btn">Voir tous les animaux</a>
