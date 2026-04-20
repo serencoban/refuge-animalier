@@ -68,8 +68,8 @@
     </div>
 
     <div class="animals__grid">
-        @for($i = 1; $i <=8 ; $i++)
-            <x-public.animal-card></x-public.animal-card>
+        @for($i = 1; $i <=8; $i++)
+            <x-public.animals.animal-card></x-public.animals.animal-card>
         @endfor
     </div>
 </section>
