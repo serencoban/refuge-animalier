@@ -87,3 +87,18 @@ table {
 p{
     line-height: 1.4;
 }
+
+.sro{
+    border: 0;
+    clip: rect(0, 0, 0, 0); /* Removed from CSS specification */
+    /* clip-path is the replacement for clip, but very few browsers support it. */
+    clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap;
+
+}

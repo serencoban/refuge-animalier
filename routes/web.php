@@ -10,9 +10,13 @@ Route::get('/animals', [\App\Http\Controllers\AnimalController::class, 'index'])
 Route::get('/animals/{animal}', [\App\Http\Controllers\AnimalController::class, 'show'])->name('public.animals.show');
 
 Route::get('/admin/dashboard',function () {
-    return view('pages.dashboard.dashboard');
+    return view('admin.dashboard');
 } )->name('dashboard');
 
 Route::get('/admin/animals',function () {
     return view('pages.animals.index');
-} )->name('admin.animals');
+} )->name('admin.animals.index');
+
+Route::get('/admin/animals/{animal}',function () {
+    return view('pages.animals.show');
+} )->name('admin.animals.show');

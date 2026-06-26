@@ -85,6 +85,8 @@
             <div class="dashboard__adoptions">
                 <section class="dashboard__adoption-requests">
                     <h3>Demandes d'adoption<span class="notif-badge">3</span></h3>
+
+                    {{-- Version desktop --}}
                     <table class="adoption-table">
                         <thead>
                         <tr>
@@ -95,30 +97,28 @@
                         </tr>
                         </thead>
                         <tbody>
-                        <div class="animals__grid">
-                            @php
-                                $rows = [
-                                    ['name' => 'Moka', 'adopter' => 'Sarah', 'date' => '05/11/25', 'status' => 'waiting'],
-                                    ['name' => 'Luna', 'adopter' => 'Paul', 'date' => '06/11/25', 'status' => 'progress'],
-                                    ['name' => 'Rex', 'adopter' => 'Julie', 'date' => '07/11/25', 'status' => 'closed'],
-                                    ['name' => 'Rex', 'adopter' => 'Julie', 'date' => '07/11/25', 'status' => 'closed'],
-                                    ['name' => 'Rex', 'adopter' => 'Julie', 'date' => '07/11/25', 'status' => 'closed'],
-                                ];
-                            @endphp
-                            @foreach($rows as $row)
-                                <x-table.table
-                                    :name="$row['name']"
-                                    :adopter="$row['adopter']"
-                                    :date="$row['date']"
-                                    :status="$row['status']"
-                                />
-                            @endforeach
-                        </div>
+                        <tr>
+                            <td>Moka</td>
+                            <td>Sarah Smith</td>
+                            <td>05/11/25</td>
+                            <td><span class="status-badge status-badge--waiting">En attente</span></td>
+                        </tr>
+                        <tr>
+                            <td>Rex</td>
+                            <td>Adrien Dupont</td>
+                            <td>02/11/25</td>
+                            <td><span class="status-badge status-badge--progress">Validé</span></td>
+                        </tr>
+                        <tr>
+                            <td>Luna</td>
+                            <td>Claire Petit</td>
+                            <td>30/10/25</td>
+                            <td><span class="status-badge status-badge--closed">Clôturée</span></td>
+                        </tr>
                         </tbody>
                     </table>
 
-
-                    <!-- Cartes mobile -->
+                    {{-- Version mobile --}}
                     <div class="adoption-cards">
                         <div class="adoption-card">
                             <div class="adoption-card__header">
@@ -136,6 +136,40 @@
                                 </div>
                             </div>
                         </div>
+
+                        <div class="adoption-card">
+                            <div class="adoption-card__header">
+                                <span class="adoption-card__name">Rex</span>
+                                <span class="status-badge status-badge--care">En soins</span>
+                            </div>
+                            <div class="adoption-card__body">
+                                <div class="adoption-card__row">
+                                    <span class="adoption-card__label">Adopteur</span>
+                                    <span>Adrien Dupont</span>
+                                </div>
+                                <div class="adoption-card__row">
+                                    <span class="adoption-card__label">Date</span>
+                                    <span>02/11/25</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="adoption-card">
+                            <div class="adoption-card__header">
+                                <span class="adoption-card__name">Luna</span>
+                                <span class="status-badge status-badge--closed">Clôturée</span>
+                            </div>
+                            <div class="adoption-card__body">
+                                <div class="adoption-card__row">
+                                    <span class="adoption-card__label">Adopteur</span>
+                                    <span>Claire Petit</span>
+                                </div>
+                                <div class="adoption-card__row">
+                                    <span class="adoption-card__label">Date</span>
+                                    <span>30/10/25</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </section>
 
@@ -148,8 +182,6 @@
                     <a href="#" class="dashboard__validation-footer">Voir toutes les fiches</a>
                 </section>
             </div>
-
-
             <div class="dashboard__messages">
                 <section class="dashboard__notifications">
                     <h3 class="dashboard__section-title">Notifications<span class="notif-badge">3</span></h3>
